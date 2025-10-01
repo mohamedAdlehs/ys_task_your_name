@@ -1,16 +1,34 @@
-# ys_task_your_name
+# YemenSoft Chef App
 
-A new Flutter project.
+A Flutter application for restaurant chefs to track, review, and monitor incoming orders.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- ✅ User Authentication
+- ✅ Orders Management  
+- ✅ Real-time Order Status Updates
+- ✅ Auto-refresh every 30 seconds
+- ✅ Arabic & English Language Support
+- ✅ Local Data Persistence
 
-A few resources to get you started if this is your first Flutter project:
+## Technical Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Framework:** Flutter
+- **Architecture:** Clean Architecture
+- **State Management:** Bloc
+- **Networking:** Dio & Retrofit
+- **Local Storage:** Drift Database
+- **Dependency Injection:** get_it
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## APIs Integration
+
+- `GetUserDetails` - User login
+- `GetOrders` - Fetch orders list  
+- `SetOrderProcessed` - Update order status
+
+## Development
+
+```bash
+flutter pub get
+flutter pub run build_runner build
+flutter run
